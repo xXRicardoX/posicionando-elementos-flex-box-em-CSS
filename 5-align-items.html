@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        .flex{
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+        .strectch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <section class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais algum texto aqui. lipsum</div>
+    </section>
+
+    <p>Strectch</p>
+    <section class="container strectch">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais aladadadadadads gum texto aqui. lipsum</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container start">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais algum texto aqui. lipsum</div>
+    </section>
+    <p>flex-end</p>
+    <section class="container end">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">item 3 mais algum texto aqui. lipsum</div>
+    </section>
+
+
+</body>
+</html>
